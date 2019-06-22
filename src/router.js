@@ -10,7 +10,19 @@ const r = new Router({
   routes: [{
       path: '/',
       name: 'home',
-      component: Home
+      redirect: '/welcome',
+      component: Home,
+      children: [{
+          path: '/welcome',
+          name: 'welcome',
+          component: () => import('./views/Welcome.vue')
+        },
+        {
+          path: '/users',
+          name: 'users',
+          component: () => import('./views/Users.vue')
+        }
+      ]
     },
     {
       path: '/login',
