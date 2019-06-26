@@ -133,12 +133,11 @@ export default {
   .el-table {
     margin: 15px 0;
   }
-  .box-card {
-    margin: 15px 0;
+  
     .btn2 {
       display: flex;
       justify-content: flex-end;
     }
-  }
+  
 }
 </style>

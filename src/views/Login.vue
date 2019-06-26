@@ -20,7 +20,8 @@
             type="password"
             v-model="form.password"
             @keydown.enter.native="submitForm('ruleForm')"
-          ></el-input>
+          >
+          </el-input>
         </el-form-item>
 
         <el-form-item class='aaaa'>
@@ -54,8 +55,8 @@ export default {
   data() {
     return {
       form: {
-        username: "",
-        password: ""
+        username: "admin",
+        password: "123456"
       },
       rules: {
         username: [
